@@ -76,8 +76,8 @@ class UploadModal extends React.Component {
    */
   deleteCurrentFile = () => {
     if (this.state.fileId != -1) {
-      console.log('Deleted ' + this.state.fileId)
-      axios.delete('/api/source-file/', { data: { id: this.state.fileId } })
+      // console.log('Deleted ' + this.state.fileId)
+      // axios.delete('/api/source-file/', { data: { id: this.state.fileId } })
     }
   }
 
@@ -107,6 +107,7 @@ class UploadModal extends React.Component {
         detailsStep: true
       })
     } else if (this.state.droppedFile) {
+      /*
       const song = {
         source_id: this.state.fileId,
         artist: this.state.artist,
@@ -125,12 +126,14 @@ class UploadModal extends React.Component {
             errors: [err]
           })
         })
+      */
     } else if (this.state.link) {
       const details = {
         youtube_link: this.state.link,
         artist: this.state.artist,
         title: this.state.title
       }
+      /*
       axios
       .post('/api/source-song/youtube/', details)
       .then(({ data }) => {
@@ -143,6 +146,7 @@ class UploadModal extends React.Component {
           errors: data.errors
         })
       })
+      */
     }
   }
 
@@ -213,6 +217,7 @@ class UploadModal extends React.Component {
         this.resetFetchState()
         this.setState({ errors: ['Invalid YouTube link.'] })
       } else {
+        /*
         // Wait for results from backend
         this.setState({
           fetchingState: FetchStatus.IS_FETCHING
@@ -244,6 +249,7 @@ class UploadModal extends React.Component {
             })
           }
         })
+        */
       }
     }
   }
@@ -279,6 +285,9 @@ class UploadModal extends React.Component {
           <Modal.Title>{modalTitle}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
+          <Alert variant="danger">
+            <div>Functionality disabled for demo purposes.</div>
+          </Alert>
           {errors.length > 0 && (
             <Alert variant="danger">
               {errors.map((val, idx) => (
@@ -295,18 +304,18 @@ class UploadModal extends React.Component {
           ) : (
             <div>
               <Dropzone
-                disabled={link}
+                disabled={true}
                 maxFiles={1}
                 maxSizeBytes={MAX_FILE_BYTES}
                 multiple={false}
                 accept=".mp3,.flac,.wav"
                 onChangeStatus={this.handleChangeStatus}
-                getUploadParams={() => ({ url: '/api/source-file/' })}
+                // getUploadParams={() => ({ url: '/api/source-file/' })}
                 InputComponent={CustomInput}
                 PreviewComponent={CustomPreview}
               />
               <hr className="hr-text" data-content="OR" />
-              <YouTubeLinkField fetchingState={fetchingState} disabled={droppedFile} link={link} handleChange={this.handleChange} />
+              <YouTubeLinkField fetchingState={fetchingState} disabled={true} link={link} handleChange={this.handleChange} />
             </div>
           )}
         </Modal.Body>

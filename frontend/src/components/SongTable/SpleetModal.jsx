@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Modal } from 'react-bootstrap'
+import { Alert, Button, Modal } from 'react-bootstrap'
 import axios from 'axios'
 import SpleetModalForm from './SpleetModalForm'
 
@@ -106,6 +106,9 @@ class SpleetModal extends React.Component {
           <Modal.Title>Separate Source</Modal.Title>
         </Modal.Header>
         <Modal.Body>
+          <Alert variant="danger">
+            <div>Functionality disabled for demo purposes.</div>
+          </Alert>
           <SpleetModalForm
             parts={PARTS}
             song={song}
@@ -121,8 +124,8 @@ class SpleetModal extends React.Component {
           </Button>
           <Button
             variant="primary"
-            disabled={allChecked || noneChecked}
-            onClick={this.onSubmit}>
+            disabled={true}
+            onClick={this.props.hide}>
             Finish
           </Button>
         </Modal.Footer>

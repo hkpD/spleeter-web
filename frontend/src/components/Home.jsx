@@ -177,20 +177,156 @@ class Home extends Component {
    * Fetch song data from backend
    */
   loadData = async () => {
+    this.setState({
+      songList: [
+        {
+          artist: "Linkin Park",
+          date_created: "2020-05-14T14:02:02.209178Z",
+          id: "aee38ebd-5581-42c7-919a-b4253e9f0d40",
+          source_id: "3d35dfa6-7f85-4cd3-9a6c-98db4b9c0861",
+          title: "In the End (Mellen Gi Remix)",
+          url: "https://spleeterstorage.blob.core.windows.net/media/uploads/3d35dfa6-7f85-4cd3-9a6c-98db4b9c0861/Linkin_Park_-_In_The_End_Mellen_Gi_Remix.webm",
+          separated: [
+            {
+              bass: false,
+              date_created: "2020-05-14T14:02:26.069318Z",
+              drums: false,
+              error: "",
+              id: "51fa8bee-2454-4a6a-9efd-0f7aadce29e3",
+              other: false,
+              status: "Done",
+              url: "https://spleeterstorage.blob.core.windows.net/media/separate/51fa8bee-2454-4a6a-9efd-0f7aadce29e3/Linkin_Park_-_In_The_End_Mellen_Gi_Remix_vocals.mp3",
+              vocals: true
+            },
+            {
+              bass: true,
+              date_created: "2020-05-14T14:02:34.923641Z",
+              drums: true,
+              error: "",
+              id: "e4392a88-6e26-40f7-936f-5b4b13251c42",
+              other: true,
+              status: "Done",
+              url: "https://spleeterstorage.blob.core.windows.net/media/separate/e4392a88-6e26-40f7-936f-5b4b13251c42/Linkin_Park_-_In_The_End_Mellen_Gi_Remix_drums_bass_other.mp3",
+              vocals: false
+            },
+            {
+              bass: true,
+              date_created: "2020-05-14T14:02:42.570068Z",
+              drums: false,
+              error: "",
+              id: "4956d520-31b6-4c3c-bc0a-31b9cb22dc08",
+              other: true,
+              status: "Done",
+              url: "https://spleeterstorage.blob.core.windows.net/media/separate/4956d520-31b6-4c3c-bc0a-31b9cb22dc08/Linkin_Park_-_In_The_End_Mellen_Gi_Remix_vocals_bass_other.mp3",
+              vocals: true
+            }
+          ]
+        },
+        {
+          artist: "Queen",
+          date_created: "2020-05-14T14:03:08.556608Z",
+          id: "b33ed5ec-5f78-4a0c-b85c-b7d0af2e211a",
+          source_id: "6d452a29-886d-481e-876d-c720b400d2a7",
+          title: "Bohemian Rhapsody",
+          url: "https://spleeterstorage.blob.core.windows.net/media/uploads/6d452a29-886d-481e-876d-c720b400d2a7/Queen_-_Bohemian_Rhapsody.m4a",
+          separated: [
+            {
+              bass: false,
+              date_created: "2020-05-14T14:04:23.760061Z",
+              drums: false,
+              error: "",
+              id: "d1ecfa47-8ebb-4c81-a3b2-4cff00984cce",
+              other: false,
+              status: "Done",
+              url: "https://spleeterstorage.blob.core.windows.net/media/separate/d1ecfa47-8ebb-4c81-a3b2-4cff00984cce/Queen_-_Bohemian_Rhapsody_vocals.mp3",
+              vocals: true
+            },
+            {
+              bass: true,
+              date_created: "2020-05-14T14:05:08.370138Z",
+              drums: true,
+              error: "",
+              id: "fad5540b-f663-4802-963c-7ce80150dbdf",
+              other: true,
+              status: "Done",
+              url: "https://spleeterstorage.blob.core.windows.net/media/separate/fad5540b-f663-4802-963c-7ce80150dbdf/Queen_-_Bohemian_Rhapsody_drums_bass_other.mp3",
+              vocals: false
+            },
+            {
+              bass: false,
+              date_created: "2020-05-14T14:05:13.877281Z",
+              drums: true,
+              error: "",
+              id: "377e6713-65d0-49bf-9014-ca42c45a287d",
+              other: false,
+              status: "Done",
+              url: "https://spleeterstorage.blob.core.windows.net/media/separate/377e6713-65d0-49bf-9014-ca42c45a287d/Queen_-_Bohemian_Rhapsody_drums.mp3",
+              vocals: false
+            }
+          ],
+        },
+        {
+          artist: "Imagine Dragons",
+          date_created: "2020-05-14T14:14:59.167523Z",
+          id: "cd753ed0-86d7-4c70-afaa-873c2694b257",
+          source_id: "80359c75-02fd-45fe-974d-56476b66c803",
+          title: "Believer ft. Lil Wayne",
+          url: "https://spleeterstorage.blob.core.windows.net/media/uploads/80359c75-02fd-45fe-974d-56476b66c803/01_Believer.mp3",
+          separated: [
+            {
+              bass: false,
+              date_created: "2020-05-14T14:15:36.120515Z",
+              drums: false,
+              error: "",
+              id: "6efec2bd-9a8b-4c9f-9bbf-437b8a3dedf5",
+              other: false,
+              status: "Done",
+              url: "https://spleeterstorage.blob.core.windows.net/media/separate/6efec2bd-9a8b-4c9f-9bbf-437b8a3dedf5/Imagine_Dragons_-_Believer_ft._Lil_Wayne_vocals.mp3",
+              vocals: true
+            },
+            {
+              bass: true,
+              date_created: "2020-05-14T14:15:43.270285Z",
+              drums: true,
+              error: "",
+              id: "8197c7e8-80e1-4da8-af4f-fa93a3ec12af",
+              other: true,
+              status: "Done",
+              url: "https://spleeterstorage.blob.core.windows.net/media/separate/8197c7e8-80e1-4da8-af4f-fa93a3ec12af/Imagine_Dragons_-_Believer_ft._Lil_Wayne_drums_bass_other.mp3",
+              vocals: false
+            },
+            {
+              bass: true,
+              date_created: "2020-05-14T14:15:59.151427Z",
+              drums: true,
+              error: "",
+              id: "3d9010f8-9db0-440c-a063-cf33b7d1dc4b",
+              other: false,
+              status: "Done",
+              url: "https://spleeterstorage.blob.core.windows.net/media/separate/3d9010f8-9db0-440c-a063-cf33b7d1dc4b/Imagine_Dragons_-_Believer_ft._Lil_Wayne_drums_bass.mp3",
+              vocals: false
+            }
+          ],
+        }
+      ]
+    })
+    /*
     axios
       .get('/api/source-song/')
       .then(({ data }) => {
         if (data) {
+          console.log(data)
           this.setState({ songList: data })
         }
       })
       .catch(error => console.log('API errors:', error))
+    */
   }
 
   componentDidMount() {
     this.loadData()
     // Auto-refresh data every 10 seconds
-    setInterval(this.loadData, 10000)
+    // setInterval(this.loadData, 10000)
   }
 
   render() {
