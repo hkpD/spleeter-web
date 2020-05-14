@@ -181,13 +181,15 @@ class Home extends Component {
       songList: [
         {
           artist: "Linkin Park",
+          title: "In the End (Mellen Gi Remix)",
           date_created: "2020-05-14T14:02:02.209178Z",
           id: "aee38ebd-5581-42c7-919a-b4253e9f0d40",
           source_id: "3d35dfa6-7f85-4cd3-9a6c-98db4b9c0861",
-          title: "In the End (Mellen Gi Remix)",
           url: "https://spleeterstorage.blob.core.windows.net/media/uploads/3d35dfa6-7f85-4cd3-9a6c-98db4b9c0861/Linkin_Park_-_In_The_End_Mellen_Gi_Remix.webm",
           separated: [
             {
+              artist: "Linkin Park",
+              title: "In the End (Mellen Gi Remix)",
               bass: false,
               date_created: "2020-05-14T14:02:26.069318Z",
               drums: false,
@@ -199,6 +201,8 @@ class Home extends Component {
               vocals: true
             },
             {
+              artist: "Linkin Park",
+              title: "In the End (Mellen Gi Remix)",
               bass: true,
               date_created: "2020-05-14T14:02:34.923641Z",
               drums: true,
@@ -210,6 +214,8 @@ class Home extends Component {
               vocals: false
             },
             {
+              artist: "Linkin Park",
+              title: "In the End (Mellen Gi Remix)",
               bass: true,
               date_created: "2020-05-14T14:02:42.570068Z",
               drums: false,
@@ -224,13 +230,15 @@ class Home extends Component {
         },
         {
           artist: "Queen",
+          title: "Bohemian Rhapsody",
           date_created: "2020-05-14T14:03:08.556608Z",
           id: "b33ed5ec-5f78-4a0c-b85c-b7d0af2e211a",
           source_id: "6d452a29-886d-481e-876d-c720b400d2a7",
-          title: "Bohemian Rhapsody",
           url: "https://spleeterstorage.blob.core.windows.net/media/uploads/6d452a29-886d-481e-876d-c720b400d2a7/Queen_-_Bohemian_Rhapsody.m4a",
           separated: [
             {
+              artist: "Queen",
+              title: "Bohemian Rhapsody",
               bass: false,
               date_created: "2020-05-14T14:04:23.760061Z",
               drums: false,
@@ -242,6 +250,8 @@ class Home extends Component {
               vocals: true
             },
             {
+              artist: "Queen",
+              title: "Bohemian Rhapsody",
               bass: true,
               date_created: "2020-05-14T14:05:08.370138Z",
               drums: true,
@@ -253,6 +263,8 @@ class Home extends Component {
               vocals: false
             },
             {
+              artist: "Queen",
+              title: "Bohemian Rhapsody",
               bass: false,
               date_created: "2020-05-14T14:05:13.877281Z",
               drums: true,
@@ -267,13 +279,15 @@ class Home extends Component {
         },
         {
           artist: "Imagine Dragons",
+          title: "Believer ft. Lil Wayne",
           date_created: "2020-05-14T14:14:59.167523Z",
           id: "cd753ed0-86d7-4c70-afaa-873c2694b257",
           source_id: "80359c75-02fd-45fe-974d-56476b66c803",
-          title: "Believer ft. Lil Wayne",
           url: "https://spleeterstorage.blob.core.windows.net/media/uploads/80359c75-02fd-45fe-974d-56476b66c803/01_Believer.mp3",
           separated: [
             {
+              artist: "Imagine Dragons",
+              title: "Believer ft. Lil Wayne",
               bass: false,
               date_created: "2020-05-14T14:15:36.120515Z",
               drums: false,
@@ -285,6 +299,8 @@ class Home extends Component {
               vocals: true
             },
             {
+              artist: "Imagine Dragons",
+              title: "Believer ft. Lil Wayne",
               bass: true,
               date_created: "2020-05-14T14:15:43.270285Z",
               drums: true,
@@ -296,6 +312,8 @@ class Home extends Component {
               vocals: false
             },
             {
+              artist: "Imagine Dragons",
+              title: "Believer ft. Lil Wayne",
               bass: true,
               date_created: "2020-05-14T14:15:59.151427Z",
               drums: true,
